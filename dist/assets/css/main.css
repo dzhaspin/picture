@@ -637,6 +637,8 @@ h4 {
   text-align: center;
   position: relative;
   z-index: -1000;
+  opacity: 0.6;
+  font-family: 'Circe Extra Bold', sans-serif;
 }
 
 .calc .button-order {

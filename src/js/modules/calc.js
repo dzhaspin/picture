@@ -11,11 +11,13 @@ const calc = (size, material, options, promocode, result) => {
       sum = Math.round((+sizeBlock.value) * (+materialBlock.value) + (+optionsBlock.value));
 
       if (sizeBlock.value == '' || materialBlock.value == '') {
-         resultBlock.textContent = "Пожалуйста, выберите размер и материал картины";
+         resultBlock.innerHTML = "Пожалуйста, выберите размер и материал картины";
       } else if (promocodeBlock.value == 'IWANTPOPART' || promocodeBlock.value == 'IWANTPOPART ') {
-         resultBlock.textContent = Math.round(sum - (sum * 30 / 100));
+         resultBlock.innerHTML = Math.round(sum - (sum * 30 / 100)) + '<small> ₽</small>';
+         resultBlock.style.fontSize = '18px';
       } else {
-         resultBlock.textContent = sum;
+         resultBlock.innerHTML = sum + '<small> ₽</small>';
+         resultBlock.style.fontSize = '18px';
       }
    };
 
