@@ -26,8 +26,8 @@ const modals = () => {
                 });
 
                 modal.style.display = "block";
-                document.body.style.overflow = "hidden";
-                document.body.style.marginRight = `${scroll}px`;
+                // document.body.style.overflow = "hidden";
+                // document.body.style.marginRight = `${scroll}px`;
             });
         });
 
@@ -37,8 +37,8 @@ const modals = () => {
             });
 
             modal.style.display = "none";
-            document.body.style.overflow = "";
-            document.body.style.marginRight = `0px`;
+            // document.body.style.overflow = "";
+            // document.body.style.marginRight = `0px`;
         });
 
         modal.addEventListener('click', (e) => {
@@ -48,8 +48,8 @@ const modals = () => {
                 });
 
                 modal.style.display = "none";
-                document.body.style.overflow = "";
-                document.body.style.marginRight = `0px`;
+                // document.body.style.overflow = "";
+                // document.body.style.marginRight = `0px`;
             }
         });
     }
@@ -66,9 +66,9 @@ const modals = () => {
 
             if (!display) {
                 document.querySelector(selector).style.display = 'block';
-                document.body.style.overflow = "hidden";
+                // document.body.style.overflow = "hidden";
                 let scroll = calcScroll();
-                document.body.style.marginRight = `${scroll}px`;
+                // document.body.style.marginRight = `${scroll}px`;
             }
         }, time);
     }
